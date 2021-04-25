@@ -14,10 +14,14 @@ class TestAreAnagrams(unittest.TestCase):
     def test_areanagrams_ba_ab(self):
         self.assertEqual(are_anagrams('ba', 'ab'), True)
 
+    def test_areanagrams_ba_vide(self):
+        self.assertEqual(are_anagrams('ba', ''), False)
+
 
 def are_anagrams(word_a: str, word_b: str):
-    if word_a == word_b and len(word_a) > 0:
-        return True
+    if len(word_a) > 0:
+        if word_a[0] == word_b[-1]:
+            return True
     return False
 
 
