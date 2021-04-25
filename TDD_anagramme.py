@@ -17,6 +17,15 @@ class TestAreAnagrams(unittest.TestCase):
     def test_areanagrams_ba_vide(self):
         self.assertEqual(are_anagrams('ba', ''), False)
 
+    def test_areanagrams_ba_bc(self):
+        self.assertEqual(are_anagrams('ba', 'bc'), False)
+
+    def test_areanagrams_bac_bc(self):
+        self.assertEqual(are_anagrams('bac', 'bc'), False)
+
+    def test_areanagrams_bac_cb(self):
+        self.assertEqual(are_anagrams('bac', 'cb'), False)
+
 
 def are_anagrams(word_a: str, word_b: str):
     if len(word_a) > 0 and len(word_b) > 0:
