@@ -28,7 +28,7 @@ class TestAreAnagrams(unittest.TestCase):
 
 
 def are_anagrams(word_a: str, word_b: str):
-    if len(word_a) > 0 and len(word_b) > 0:
+    if len(word_a) == len(word_b) > 0:
         if word_a[0] == word_b[-1]:
             return True
     return False
