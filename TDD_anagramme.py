@@ -7,7 +7,7 @@ class TestAreAnagrams(unittest.TestCase):
 
 
 def are_anagrams():
-    pass
+    return False
 
 
 if __name__ == '__main__':
