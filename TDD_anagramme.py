@@ -2,10 +2,10 @@ import unittest
 
 
 class TestAreAnagrams(unittest.TestCase):
-    def test_areanagrams(self):
+    def test_areanagrams_vide(self):
         self.assertEqual(are_anagrams('', ''), False)
 
-    def test_areanagrams(self):
+    def test_areanagrams_a_a(self):
         self.assertEqual(are_anagrams('a', 'a'), True)
 
 
